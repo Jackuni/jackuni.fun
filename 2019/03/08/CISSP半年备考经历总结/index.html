@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="学习总结,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="2019年3月，经过半年的准备，CISSP考试终于顺利通过，这里回顾下这半年的学习经历，一来做个总结，二来希望可以帮到其他备考CISSP的同学。 TLDR：此次CISSP考试准备历时半年多，未报培训班，所有的学习时间加起来应该在250小时以上。主要的学习内容：  OSG 总共读了三遍 AIO 浏览了一遍 总结的笔记读了n遍 官方习题集 细细的做了两遍 看了一遍cybrary的培训视频  建议：多搜">
+<meta name="keywords" content="学习总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CISSP半年备考经历总结">
+<meta property="og:url" content="http://yoursite.com/2019/03/08/CISSP半年备考经历总结/index.html">
+<meta property="og:site_name" content="Jack Jack Jack">
+<meta property="og:description" content="2019年3月，经过半年的准备，CISSP考试终于顺利通过，这里回顾下这半年的学习经历，一来做个总结，二来希望可以帮到其他备考CISSP的同学。 TLDR：此次CISSP考试准备历时半年多，未报培训班，所有的学习时间加起来应该在250小时以上。主要的学习内容：  OSG 总共读了三遍 AIO 浏览了一遍 总结的笔记读了n遍 官方习题集 细细的做了两遍 看了一遍cybrary的培训视频  建议：多搜">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-18T09:53:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CISSP半年备考经历总结">
+<meta name="twitter:description" content="2019年3月，经过半年的准备，CISSP考试终于顺利通过，这里回顾下这半年的学习经历，一来做个总结，二来希望可以帮到其他备考CISSP的同学。 TLDR：此次CISSP考试准备历时半年多，未报培训班，所有的学习时间加起来应该在250小时以上。主要的学习内容：  OSG 总共读了三遍 AIO 浏览了一遍 总结的笔记读了n遍 官方习题集 细细的做了两遍 看了一遍cybrary的培训视频  建议：多搜">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/03/08/CISSP半年备考经历总结/">
+
+
+
+
+
+  <title>CISSP半年备考经历总结 | Jack Jack Jack</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack Jack Jack</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/08/CISSP半年备考经历总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jackuni">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack Jack Jack">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CISSP半年备考经历总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-08T21:53:55+08:00">
+                2019-03-08
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-03-18T17:53:12+08:00">
+                2019-03-18
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/03/08/CISSP半年备考经历总结/" class="leancloud_visitors" data-flag-title="CISSP半年备考经历总结">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>2019年3月，经过半年的准备，CISSP考试终于顺利通过，这里回顾下这半年的学习经历，一来做个总结，二来希望可以帮到其他备考CISSP的同学。</p>
+<p><strong>TLDR：</strong><br>此次CISSP考试准备历时半年多，未报培训班，所有的学习时间加起来应该在250小时以上。<br>主要的学习内容：</p>
+<ul>
+<li>OSG 总共读了三遍</li>
+<li>AIO 浏览了一遍</li>
+<li>总结的笔记读了n遍</li>
+<li>官方习题集 细细的做了两遍</li>
+<li>看了一遍cybrary的培训视频</li>
+</ul>
+<p>建议：多搜集资料、多看书、多做题、有条件的可以考虑报班。</p>
+<h3 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h3><ul>
+<li>考试大纲<ul>
+<li>备考应当以考试大纲为复习中心，其他的书、视频、习题什么的都是途径（当初失误的地方，以书为中心。）。</li>
+</ul>
+</li>
+<li><p>书</p>
+<ul>
+<li><a href="https://item.jd.com/12306039.html" target="_blank" rel="noopener">All in one，中文 7th</a>（以下简称为AIO）<ul>
+<li>“CISSP考试圣经”，讲的比较细，适合工作经验比较短或者基础不是特别好的同学（比如我这样的），翻译质量还算可以，有些超纲的知识比如物理安全那块的各种锁等知识点可以忽略不看。</li>
+</ul>
+</li>
+<li><a href="https://item.jd.com/12200502.html" target="_blank" rel="noopener">CISSP官方学习指南，中文 7th</a>（以下简称为OSG）<ul>
+<li>这本书讲解没有AIO讲解的细，适合工作经验比较多，基础不错的同学。官方出版的，和大纲更接近，翻译质量欠佳，感觉正文、习题和习题详解不是同一个人翻译的。</li>
+</ul>
+</li>
+<li>其他参考书籍：OSG（英文 8th），AIO（英文 5th,7th,8th），<a href="https://www.amazon.com/Official-ISC-Guide-CISSP-Press/dp/1482262754" target="_blank" rel="noopener">CBK（英文 4th）</a></li>
+</ul>
+</li>
+<li><p>习题：</p>
+<ul>
+<li><a href="https://www.amazon.com/CISSP-Official-ISC-Practice-Tests/dp/1119252288" target="_blank" rel="noopener">CISSP Official ISC2 Practice Tests</a>，以下简称为官方习题集（绿皮）<ul>
+<li>整理在线版:<a href="https://zhuanlan.zhihu.com/p/50328161" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/50328161</a></li>
+</ul>
+</li>
+<li>OSG课后习题</li>
+<li>CBK课后习题</li>
+<li>其他习题推荐：AIO课后练习题、AIO配套练习光盘、AIO配套练习题（CISSP Practice Exams-Shon Harris）等等</li>
+</ul>
+</li>
+<li>视频：<ul>
+<li><a href="https://ke.qq.com/course/339771?tuin=1681319" target="_blank" rel="noopener">公开课：CISSP认证介绍与如何学习-唐俊飞</a><ul>
+<li>对CISSP考试和如何准备的介绍，可以快速的了解CISSP考试和备考</li>
+</ul>
+</li>
+<li><a href="https://www.cybrary.it/course/cissp/" target="_blank" rel="noopener">cybrary CISSP培训视频-Kelly Handerhan</a> <ul>
+<li>(良心视频，强烈推荐，英文无字幕，注册后免费观看，课程总时长13小时)</li>
+</ul>
+</li>
+<li>考前指导视频（可以在正式考试的前几天看看）：<ul>
+<li><a href="https://www.youtube.com/watch?v=eLYbFtS7G9E" target="_blank" rel="noopener">Larry Greenblatt - CISSP 2018 Exam Tips</a> (英文，可开启字幕)</li>
+<li><a href="https://www.youtube.com/watch?v=-99b1YUFx0A" target="_blank" rel="noopener">Kelly Handerhan的考前指导视频 Why you WILL pass the CISSP - CyberTrain.IT 10-min Series （英文，可开启字幕）
+</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>其他信息资料：<ul>
+<li>搜集别人的考试经验，寻找有用的信息（这也算是side channel攻击了吧…）</li>
+<li>Amazon上OSG、AIO、官方习题集的书籍评论。可以找到一些有用的信息和资源，比如上面cybrary的视频就是在AIO的评论里看到的。</li>
+</ul>
+</li>
+</ul>
+<h3 id="流水账篇"><a href="#流水账篇" class="headerlink" title="流水账篇"></a>流水账篇</h3><h4 id="OSG第一遍（18年8月-18年10月中旬）"><a href="#OSG第一遍（18年8月-18年10月中旬）" class="headerlink" title="OSG第一遍（18年8月-18年10月中旬）"></a>OSG第一遍（18年8月-18年10月中旬）</h4><p>在正式备考前，手上正好有一本精装版的《All in One 5th》，虽然版本比较旧，但是语言读起来真是一种享受，不过只看了前三章，考虑到第5版的AIO对应的是CISSP旧版10个知识域，而且英文原版读起来比较费时间，决定以中文教材为主要复习材料。</p>
+<p>8月份，开始正式备考，每天至少抽出一个多小时来看书。当时买了官方指导学习指南（OSG）中文第7版，开始第一遍啃书。第一遍读书的目的很简单，先知道有什么，了解下大概每章都有哪些知识点。</p>
+<p>OSG的作者根据自己的理解把CISSP考试的8个知识域分成了21章。这样的好处是章节不长，读起来压力小些。不方便的是本来8个知识域分成21章，感觉有点散，我第一遍读的时候都有点分不清哪章是哪个知识域的。读书模式基本是读完一章，接着做书后练习题，对答案。然后在书里正文部分找到错题对应的知识点，标记出来，方便记忆。<br>有的章节比较难理解，比如第八章安全模型那章，当时第一遍看完之后一脸懵逼，各种安全模型完全不知所云，所以这一章的课后习题就先搁置了。</p>
+<p>10月13日，OSG第一遍终于看完，总共花了两个月的时间。</p>
+<h4 id="OSG第二遍-整理读书笔记（18年10月中旬-18年12月中旬）"><a href="#OSG第二遍-整理读书笔记（18年10月中旬-18年12月中旬）" class="headerlink" title="OSG第二遍+整理读书笔记（18年10月中旬-18年12月中旬）"></a>OSG第二遍+整理读书笔记（18年10月中旬-18年12月中旬）</h4><p>读完第一遍，对每一章的内容有了大概的了解。第二遍的主要目的就是搞清楚“是什么”，理解记忆不同的知识点，并把每章的主要内容列出来，整理成笔记，方便后期复习。<br>第二遍看的相对仔细些，尽量的去尝试理解和记忆。比如再次看第8章时，就努力思考为什么Bell-LaPadula模型不能向上读，为什么Biba模型不能向下读等等。（AIO里对Biba模型的举例很生动。）</p>
+<p>看完每章的正文部分，开始整理对应章节的主要知识点。我整理的方法是：把所有子标题都列出来，把每个子章节或片段里感觉重要的知识点、语句都敲到笔记里。同时根据OSG英文版本，把重要术语的英文也都附在中文后面。（后来发现这样在后期做题寻找对应知识点时很方便查找。）<br>整理笔记花费的时间要比想象的长很多。到了11月份发现进度非常慢，有点沮丧，感觉得加把劲了。</p>
+<p>为了激励自己，在11月初预约了19年2月份的考试。699美刀！！！预约完毕，把订单信息打印出来贴到了自己桌子上，这样只要一坐下就能看到：“USD 699”！。就是为了这699美刀，也得好好备考啊（捂脸哭）！从11月初开始，每天晚上下班后至少抽出2个半小时以上的时间来学习。所有的周末时间也基本都安排给了学习CISSP，其它各种活动、聚餐能推的都推了，安心到公司看书。</p>
+<p>12月15日，第二遍看书+整理笔记终于结束，花费时间两个月。</p>
+<h4 id="官方习题集-第一遍-（18年12月中旬-19年1月底）"><a href="#官方习题集-第一遍-（18年12月中旬-19年1月底）" class="headerlink" title="官方习题集(第一遍)（18年12月中旬-19年1月底）"></a>官方习题集(第一遍)（18年12月中旬-19年1月底）</h4><p>第二遍读书结束后，心态出奇的好，不知道哪来的自信，感觉自己都可以直接去参加考试了。<br>进入刷题阶段。那么问题来了，做哪些习题？</p>
+<p>可以选择的习题有很多，除了官方出的官方习题集（绿皮的）之外，还有AIO配套的习题集（红皮）、AIO随书光盘里有一千七百多道习题，其他的还有网上流传的某培训机构的1000道习题。最后经过各种信息搜集，决定先做官方习题册（CISSP Official ISC2 Practice Tests）！<br>网上可以找到的官方习题集是第一版的，然而最新的第二版官方习题集已经在出售了，当时犹豫要不要买最新版的。最后看了下Amazon上对第二版的评价，吐槽的有点多，决定还是专心的做第一版。</p>
+<p>官方习题集，总共有10章。Ch09和Ch10是两套模拟题，Ch01-Ch08对应8个知识域，总计1300道题。做题顺序按照作者的建议，先做的模拟一：Ch09，然后Ch01-Ch08，最后模拟二Ch10。</p>
+<p>第一次做题结果：</p>
+<table>
+<thead>
+<tr>
+<th>ch09</th>
+<th>ch01</th>
+<th>ch02</th>
+<th>ch03</th>
+<th>ch04</th>
+<th>ch05</th>
+<th>ch06</th>
+<th>ch07</th>
+<th>ch08</th>
+<th>ch10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>58.8%</td>
+<td>84%</td>
+<td>81%</td>
+<td>71%</td>
+<td>57%</td>
+<td>53%</td>
+<td>57%</td>
+<td>73%</td>
+<td>68%</td>
+<td>67.6%</td>
+</tr>
+</tbody>
+</table>
+<p>做完第一份模拟题ch09就是赤裸裸的一次打击啊！250道题，错了快一半，心情极度不好。做到ch04、ch05、ch06的时候，想撕书的心都有了！正确率只有一半多一点。心情极度沮丧！书看了这么久还做成个这样子，真是崩溃！！！无奈…..调整心态，继续乖乖的核对错题，找对应知识点，然后补充到整理的笔记中，一些感觉重要的题目直接复制到笔记里对应的知识点下。后来分析了下这些错题，发现正确率低是有原因的，题目里有些知识点OSG上是没有的，而且有些没见过的知识点还好几次的出现，所以如果有同学做了ch04、ch05、ch06成绩不佳，不要太沮丧，是题目的问题！！</p>
+<p>1月底春节放假前，终于做完了官方习题册的所有题目，整理核对了所有错题，并把OSG上11章到21章的内容又看了一遍。</p>
+<p><strong>春节放假期间，暂停cissp备考，专心陪家人过年。</strong></p>
+<h4 id="冲刺复习阶段（2月中旬-3月）"><a href="#冲刺复习阶段（2月中旬-3月）" class="headerlink" title="冲刺复习阶段（2月中旬-3月）"></a>冲刺复习阶段（2月中旬-3月）</h4><p>过完春节后梳理了下还需要学习的内容，感觉任务有点多，所以进一步延长了晚上的学习时间，而且把上下班地铁的时间全都留给CISSP复习。这个阶段完成的内容如下：</p>
+<ol>
+<li>cybrary上Kelly Handerhan的培训视频看了一遍，并把上课的PPT截图和重点整理成笔记方便二次观看。这个培训视频真是良心之作，很多知识点都讲的很透彻。</li>
+<li>把OSG的第1章到第10章看了一遍。（至此，OSG第三遍看书完毕） </li>
+<li>开始快速的浏览AIO中文第7版，并把重要的部分补充到之前整理的OSG笔记中。</li>
+<li>把CBK的课后习题做了一遍，核对错题。</li>
+<li>感觉时间有点不够用，把考试日期从2月22日延迟到两周之后（延迟费50美刀）。</li>
+<li>零碎地复习之前整理的笔记。</li>
+<li>开始第二次做官方习题集并核对答案。<br>第二次做题结果：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>ch09</th>
+<th>ch01</th>
+<th>ch02</th>
+<th>ch03</th>
+<th>ch04</th>
+<th>ch05</th>
+<th>ch06</th>
+<th>ch07</th>
+<th>ch08</th>
+<th>ch10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>74%</td>
+<td>92%</td>
+<td>81%</td>
+<td>81%</td>
+<td>84%</td>
+<td>73%</td>
+<td>72%</td>
+<td>90%</td>
+<td>83%</td>
+<td>78.4%</td>
+</tr>
+</tbody>
+</table>
+<p>虽然没有达到预期的全都80%+，但是相比于第一次做题的结果，都提升了不少，也算欣慰。两份综合测试题的正确率都在70%，感觉还是差点，心里有点没底。后来看到有人说他模拟考试也只有70%多，但是考试通过了，借此来安慰自己。然后继续核对错题，整理到笔记中。<br>需要说明下，这里的正确率只是参考，重要的不是分数，而是对应错题背后的知识点。（有个外国小哥说他官方习题集正确率90%+结果考试没通过。）</p>
+<h4 id="考前最后一天"><a href="#考前最后一天" class="headerlink" title="考前最后一天"></a>考前最后一天</h4><p>官方习题集第二遍做完之后，距离考试只剩两天了！果断请了两天年假，在家里抓紧冲刺。<br>考前最后一天：AIO课后习题没来得及做，网上推荐的《Eleven Hour CISSP Study Guide》也还还没浏览一遍…….没有那么多时间了！！！<br>最后决定把整理的笔记拿出来，仔细的看一遍，如果看完后剩的时间还多，就再安排其他的事情。<br>不曾想……..等看完笔记，已是晚上7点（笔记最终版达到了408页，捂脸哭！！）。<br>吃过晚饭，看了下youtube的两个考前指导：</p>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=eLYbFtS7G9E" target="_blank" rel="noopener">Larry Greenblatt - CISSP 2018 Exam Tips</a> ，时长三十多分钟，里面主要讲的是CISSP考试里在相似答案里找最精确答案的一些方法和示例，推荐考前看一遍。</li>
+<li>Kelly的考前视频 <a href="https://www.youtube.com/watch?v=-99b1YUFx0A" target="_blank" rel="noopener">Why you WILL pass the CISSP - CyberTrain.IT 10-min Series
+</a>，时长16分钟。<br>建议大家在正式考试前看一下这两个视频，很有帮助。</li>
+</ol>
+<p>看完后，整理了下第二天要带的证件和吃的，然后就早早的休息了。</p>
+<h4 id="考试当天"><a href="#考试当天" class="headerlink" title="考试当天"></a>考试当天</h4><p>预约的是8点的考试，考试预约信息里建议提前半个小时抵达考场。早上5点半起床，7点半准时到达考场：</p>
+<ol>
+<li>出示两个证件（我带的是身份证+签字的信用卡，证件都必须得在有效期之内）。</li>
+<li>录掌纹，将带的包锁到柜子里，检查衣服口袋后，等待安排进考场。</li>
+</ol>
+<p>大概不到8点，就进入考场开始考试。<br>考试打开后第一项显示的是保密协议，我记得OSG上好像有说，如果这份协议阅读时间少于5分钟会取消考试资格。所以看完一遍后先赶紧点击“我同意”，然后等倒计时差不多了，再点击下一步，开始正式做题。<br>刚开始的几道题有点不适应，考虑的时间比较长。后来慢慢进入状态。<br>考试总时间360分钟，250道题目，其中25题目是测试题，不计入成绩，但是不会告知是哪些题。我的策略是：前五个小时做完所有的题目，剩下的时间留给检查不确定的题目。做完一半题目后，申请休息了几分钟，吃了几块巧克力，然后继续回考场做题。<br>做完题目，数了下总共有45个打了检查标记的题目。重新检查了这些题目，只改动了两个答案。还剩9分钟的时候，交卷！这时候心里还是很忐忑的，没有十足的把握可以考过。</p>
+<p>出考场收拾东西，监考老师拿过来刚打印好的成绩单，看到上面的“恭喜”，长舒一口气。Finally！！！</p>
+<h3 id="其他建议"><a href="#其他建议" class="headerlink" title="其他建议"></a>其他建议</h3><p>1.建议多看看CISSP官方的大纲（CISSP Certification Exam Outline），归根到底考试是根据大纲上的知识点来出题的。如果一些知识点教材书上没有讲到，可以自己去简单的了解下。<br>2.CISSP备考时间建议不要拖得太久，要不人容易疲惫，而且自己的家人朋友可能也受不了。（捂脸哭！）<br>3.以上只是我个人的备考记录，仅供参考之用。不同背景的人备考的方法和时间也可能各不相同，大家可以多搜集一些备考经验，做到“兼听则明”。</p>
+<p>另外，我把自己备考过程中使用的一些资料放到网盘里了，有需要的可以自取：<a href="https://pan.baidu.com/s/1nacv07x4T1Dn_53G7YIFIQ" target="_blank" rel="noopener">链接</a> 。<br>暗号：mfwo</p>
+<p>希望可以帮到大家，祝大家早日顺利考过！！！</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习总结/" rel="tag"><i class="fa fa-tag"></i> 学习总结</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/12/小马过河/" rel="next" title="小马过河">
+                <i class="fa fa-chevron-left"></i> 小马过河
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/1.jpg" alt="Jackuni">
+            
+              <p class="site-author-name" itemprop="name">Jackuni</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#学习资料"><span class="nav-number">1.</span> <span class="nav-text">学习资料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流水账篇"><span class="nav-number">2.</span> <span class="nav-text">流水账篇</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#OSG第一遍（18年8月-18年10月中旬）"><span class="nav-number">2.1.</span> <span class="nav-text">OSG第一遍（18年8月-18年10月中旬）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#OSG第二遍-整理读书笔记（18年10月中旬-18年12月中旬）"><span class="nav-number">2.2.</span> <span class="nav-text">OSG第二遍+整理读书笔记（18年10月中旬-18年12月中旬）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#官方习题集-第一遍-（18年12月中旬-19年1月底）"><span class="nav-number">2.3.</span> <span class="nav-text">官方习题集(第一遍)（18年12月中旬-19年1月底）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#冲刺复习阶段（2月中旬-3月）"><span class="nav-number">2.4.</span> <span class="nav-text">冲刺复习阶段（2月中旬-3月）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#考前最后一天"><span class="nav-number">2.5.</span> <span class="nav-text">考前最后一天</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#考试当天"><span class="nav-number">2.6.</span> <span class="nav-text">考试当天</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他建议"><span class="nav-number">3.</span> <span class="nav-text">其他建议</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jackuni</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("T70qdIwPpP3APXGHP3va2QJ4-gzGzoHsz", "yRkOcGO1enJCI4wxsD9thOna");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
