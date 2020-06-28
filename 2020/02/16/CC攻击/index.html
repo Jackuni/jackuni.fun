@@ -67,7 +67,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2020/02/16/CC攻击/slowloris-attack.jpeg">
 <meta property="og:image" content="http://yoursite.com/2020/02/16/CC攻击/slowloris-netstat.jpeg">
-<meta property="og:updated_time" content="2020-02-16T08:22:42.590Z">
+<meta property="og:updated_time" content="2020-04-19T08:06:04.459Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CC攻击">
 <meta name="twitter:description" content="一、CC攻击简介CC攻击，全称为challenge collapsar攻击，是DDoS的一种，属于应用层的DDoS攻击。 攻击者一般通过发送恶意的HTTP请求，以达到耗尽服务器资源，导致其无法正常服务的目的。 常见的CC攻击包括：通过海量请求耗费服务端CPU资源的攻击、慢速攻击、特定漏洞的CC攻击。 二、CC攻击常见类型及具体表现常规CC攻击通过大量请求比较耗费资源的接口，比如：全盘搜索等需要大量">
@@ -290,11 +290,21 @@
                 
               
 
-              <time title="Created: 2020-02-16 15:38:15 / Modified: 16:22:42" itemprop="dateCreated datePublished" datetime="2020-02-16T15:38:15+08:00">2020-02-16</time>
+              <time title="Created: 2020-02-16 15:38:15" itemprop="dateCreated datePublished" datetime="2020-02-16T15:38:15+08:00">2020-02-16</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-04-19 16:06:04" itemprop="dateModified" datetime="2020-04-19T16:06:04+08:00">2020-04-19</time>
+              </span>
             
           
 
@@ -343,7 +353,7 @@
 <li>dig the sitemap from target （测试目标网站的sitemap）</li>
 <li>build a list of browsers to advertise to server during request （创建一组浏览器UA以给目标网站发送请求）</li>
 <li>buy proxies from black market （从黑市上购买代理）</li>
-<li>start requests thru proxies to target （通过带来开始请求目标网站）</li>
+<li>start requests thru proxies to target （通过代理开始请求目标网站）</li>
 </ol>
 </blockquote>
 <p>使用随机的请求头，请求网站各个网址。发送几个字节，等到server端快超时了再发送接下来的几个字节，但是不要主动完成请求。<br>使用2k个代理，每个代理发送3到4个请求，就可以生成6k到8k个请求。如果服务器端是Apache，就会等待请求完成。可以发送几个字节使服务器端的Apache继续等待，在其超时之前，继续发送几个字节，这时Apache会把这个请求的计时进行重置。</p>
@@ -393,7 +403,7 @@
 <blockquote>
 <p>对历史日志的分析这时将会非常重要，数据可视化与统计学的方法将会很有益处：<br>1.分析每个页面的平均访问频率。<br>2.对访问频率异常的页面进行详细分析 分析得到ip-页面访问频率。<br>3.得到对访问异常页面的访问异常ip列表。<br>4.对日志分析得到忠实用户IP白名单。<br>5.一般一个页面会关联多个资源，一次对于这样的页面访问往往会同时增加多个资源的访问数，而攻击程序一般不会加载这些它不感兴趣的资源，所以，这也是一个非常好的分析突破点。</p>
 </blockquote>
-<h3 id="具体防御方法"><a href="#具体防御方法" class="headerlink" title="具体防御方法"></a>具体防御方法</h3><p>1.对低级的大频率CC攻击，可以直接根据UA特征、或IP进行访问限制。<br>2.中级，可以为请求定义token放到Cookie中。必须得带有正确的Token才能访问后端访问。当用户第一次访问时，cookie中没有这个Token，返回一个302重定向，同时添加set cookie字段，目标地址为当前页面。如果客户端是一个正常的浏览器，就会执行set cookie和302重定向命令。如果是简单的CC攻击软件，一般不会执行这些指令。（该方法目前长亭WAF应该还不支持，可以看下拓展脚本能否实现）<br>3.高级，返回一个网页，页面中嵌入JavaScript来设置Cookies并跳转。这样被伪造的可能性更小。</p>
+<h3 id="具体防御方法"><a href="#具体防御方法" class="headerlink" title="具体防御方法"></a>具体防御方法</h3><p>1.对低级的大频率CC攻击，可以直接根据UA特征、或IP进行访问限制。<br>2.中级，可以为请求定义token放到Cookie中。必须得带有正确的Token才能访问后端访问。当用户第一次访问时，cookie中没有这个Token，返回一个302重定向，同时添加set cookie字段，目标地址为当前页面。如果客户端是一个正常的浏览器，就会执行set cookie和302重定向命令。如果是简单的CC攻击软件，一般不会执行这些指令。<br>3.高级，返回一个网页，页面中嵌入JavaScript来设置Cookies并跳转。这样被伪造的可能性更小。</p>
 <blockquote>
 <p><strong>Token生成算法</strong><br>每个IP地址的token不同 &amp; 无法伪造 &amp; 相同的客户端每次生成的Token相同。<br>Token = Hash( UserAgent + client_ip + key )</p>
 </blockquote>
@@ -485,7 +495,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
